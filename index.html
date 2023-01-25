@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Active Online Software Page</title>
+    <meta property="og:title" content="Active Online Software Page" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <style>
+       body::-webkit-scrollbar {
+         width: 0.5em;
+         z-index: 100;
+         background-color:transparent;
+       }
+
+
+      body::-webkit-scrollbar-thumb {
+         background-color:white;
+         box-shadow:0 -100vh 0 100vh #5128f5;//magic
+       }
+    </style>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div>
+      <script
+        type="text/javascript"
+        src="https://unpkg.com/dangerous-html@0.1.11/dist/default/lib.umd.js"
+      ></script>
+      <link href="./home.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <section class="home-hero">
+          <div class="home-menu">
+            <div id="mobile-menu" class="home-mobile-navigation">
+              <img
+                alt="pastedImage"
+                src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                class="home-logo"
+              />
+              <div class="home-links">
+                <span class="Link">Solutions</span>
+                <span class="Link">How it works</span>
+                <span class="Link">Prices</span>
+              </div>
+              <div id="close-mobile-menu" class="home-close-mobile-menu">
+                <svg viewBox="0 0 804.5714285714286 1024" class="home-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <div class="home-desktop-navigation">
+              <nav class="home-centered">
+                <div class="home-left">
+                  <div class="home-links1">
+                    <a href="#providers" class="home-link Link">Providers</a>
+                    <a href="#features" class="home-link01 Link">Features</a>
+                    <a href="#pricing" class="home-link02 Link">Pricing</a>
+                    <a href="#footer" class="home-link03 Link">Contact</a>
+                  </div>
+                </div>
+                <div class="home-right">
+                  <a href="#providers" class="home-link04">
+                    <div class="home-get-started">
+                      <span class="home-text03">Download</span>
+                    </div>
+                  </a>
+                  <div id="open-mobile-menu" class="home-burger-menu">
+                    <img
+                      alt="pastedImage"
+                      src="https://play.teleporthq.io/static/svg/placeholders/no-image.svg"
+                      class="home-mobile-menu-button"
+                    />
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div>
+              <dangerous-html
+                html="<script>
+/*
+Mobile menu - Code Embed
+*/
+
+// Mobile menu
+const mobileMenu = document.querySelector('#mobile-menu')
+
+// Buttons
+const closeButton = document.querySelector('#close-mobile-menu')
+const openButton = document.querySelector('#open-mobile-menu')
+
+// On openButton click, set the mobileMenu position left to -100vw
+openButton.addEventListener('click', function() {
+    mobileMenu.style.transform = 'translateX(0%)'
+})
+
+// On closeButton click, set the mobileMenu position to 0vw
+closeButton.addEventListener('click', function() {
+    mobileMenu.style.transform = 'translateX(100%)'
+})
+</script>"
+              ></dangerous-html>
+            </div>
+          </div>
+          <header class="home-header">
+            <h1 class="home-text04">
+              <span>Manage your CI from</span>
+              <br />
+              <span>your Jetbrains IDE</span>
+            </h1>
+            <p class="home-text08">
+              IntelliJ, WebStorm, PhpStorm, PyCharm, GoLand, CLion, Android
+              Studio...
+            </p>
+          </header>
+          <div class="home-dashboard-preview">
+            <div class="home-outline">
+              <img
+                src="https://plugins.jetbrains.com/files/15457/screenshot_5792fcad-a4dd-4ca4-8f08-0284c6c858a8"
+                class="home-image"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="providers" class="home-features">
+          <span class="home-text09">
+            <span>Find your provider</span>
+            <br />
+          </span>
+          <div class="home-title"></div>
+          <div class="home-cards">
+            <div class="home-container01">
+              <a
+                href="https://plugins.jetbrains.com/plugin/15457-gitlab-ci-dashboard"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link05"
+              >
+                <div class="home-schedule card">
+                  <div class="home-container02">
+                    <img
+                      alt="pastedImage"
+                      src="https://plugins.jetbrains.com/files/15457/282263/icon/pluginIcon.svg"
+                      class="home-icon2"
+                    />
+                    <span class="home-text12">Gitlab</span>
+                  </div>
+                  <div class="home-div">
+                    <dangerous-html
+                      html="<iframe width='245px' height='48px' src='https://plugins.jetbrains.com/embeddable/install/15457'></iframe>"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://plugins.jetbrains.com/plugin/20144-github-ci-dashboard"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link06"
+              >
+                <div class="home-schedule1 card">
+                  <div class="home-container03">
+                    <img
+                      alt="pastedImage"
+                      src="https://plugins.jetbrains.com/files/20144/280238/icon/pluginIcon.svg"
+                      class="home-icon3"
+                    />
+                    <span class="home-text13">GitHub</span>
+                  </div>
+                  <div class="home-div1">
+                    <dangerous-html
+                      html="<iframe width='245px' height='48px' src='https://plugins.jetbrains.com/embeddable/install/20144'></iframe>
+"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-container04">
+              <a
+                href="https://plugins.jetbrains.com/plugin/15458-circle-ci-dashboard"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link07"
+              >
+                <div class="home-schedule2 card">
+                  <div class="home-container05">
+                    <img
+                      alt="pastedImage"
+                      src="https://plugins.jetbrains.com/files/15458/261684/icon/pluginIcon.svg"
+                      class="home-icon4"
+                    />
+                    <span class="home-text14">Circle CI</span>
+                  </div>
+                  <div class="home-div2">
+                    <dangerous-html
+                      html="<iframe width='245px' height='48px' src='https://plugins.jetbrains.com/embeddable/install/15458'></iframe>
+"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://plugins.jetbrains.com/plugin/16222-bitrise-dashboard"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link08"
+              >
+                <div class="home-schedule3 card">
+                  <div class="home-container06">
+                    <img
+                      alt="pastedImage"
+                      src="https://plugins.jetbrains.com/files/16222/278527/icon/pluginIcon.svg"
+                      class="home-icon5"
+                    />
+                    <span class="home-text15">Bitrise</span>
+                  </div>
+                  <div class="home-div3">
+                    <dangerous-html
+                      html="<iframe width='245px' height='48px' src='https://plugins.jetbrains.com/embeddable/install/16222'></iframe>"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </a>
+            </div>
+            <div class="home-container07">
+              <a
+                href="https://plugins.jetbrains.com/plugin/20683-travis-ci-dashboard"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link09"
+              >
+                <div class="home-schedule4 card">
+                  <div class="home-container08">
+                    <img
+                      alt="pastedImage"
+                      src="https://plugins.jetbrains.com/files/20683/270923/icon/pluginIcon.svg"
+                      class="home-icon6"
+                    />
+                    <span class="home-text16">Travis CI</span>
+                  </div>
+                  <div class="home-div4">
+                    <dangerous-html
+                      html="<iframe width='245px' height='48px' src='https://plugins.jetbrains.com/embeddable/install/20683'></iframe>"
+                    ></dangerous-html>
+                  </div>
+                </div>
+              </a>
+              <a
+                href="https://plugins.jetbrains.com/organizations/PixelPerfect"
+                target="_blank"
+                rel="noreferrer noopener"
+                class="home-link10"
+              >
+                <div class="home-container09">
+                  <span class="home-text17">See all</span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </section>
+        <section id="video" class="home-quote-container">
+          <h1 class="home-text18">Learn more in video</h1>
+          <div class="home-div5">
+            <dangerous-html
+              html="<iframe width='560' height='315' src='https://www.youtube.com/embed/1c141iIO6lY' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen></iframe>"
+            ></dangerous-html>
+          </div>
+        </section>
+        <section class="home-features1">
+          <div id="features" class="home-banner-advanced-analytics">
+            <div class="home-heading">
+              <span class="home-text19 title">Features</span>
+            </div>
+            <div class="home-centered-container">
+              <div class="home-right1">
+                <ul class="home-list list">
+                  <li class="list-item">
+                    <span>
+                      🔎 Search for your personal depots and public ones.
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      🖥 Keep track of pipelines and show jobs details.
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>🛠 Trigger, abort and retry pipeline or job.</span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>📋 Display build log.</span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>💾 Download artifacts.</span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>
+                        📝 Manage project and group variable in one place for
+                        each depot.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>
+                        🔎 Browse Gitlab CI document directly within IDE.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>
+                        📦 Search for Docker images and tags for your CI setup.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                  <li class="list-item">
+                    <span>
+                      <span>
+                        ✅ Check CI Yaml conf: right-click on .gitlab-ci.yml,
+                        then click on Validate CI to check if configuration is
+                        valid.
+                      </span>
+                      <br />
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="home-banner-manage">
+            <div class="home-container10">
+              <div class="home-left1">
+                <span class="home-text43 title">
+                  List all your builds in just one place
+                </span>
+              </div>
+              <div class="home-image-container">
+                <img
+                  alt="pastedImage"
+                  src="https://plugins.jetbrains.com/files/20144/screenshot_3f8c11ed-e336-42d3-b996-ed95aa20781d"
+                  class="home-cards-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="home-banner-advanced-analytics1">
+            <div class="home-centered-container1">
+              <div class="home-image-container1">
+                <img
+                  alt="pastedImage"
+                  src="https://plugins.jetbrains.com/files/15457/screenshot_188a484d-a361-4bc2-93b4-7ddb7977f985"
+                  class="home-cards-image1"
+                />
+              </div>
+              <div class="home-right2">
+                <h2 class="home-text44 title">
+                  List and edit variables and secure files instantly
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="home-banner">
+            <div class="home-container11">
+              <div class="home-left2">
+                <h2 class="home-text45 title">
+                  Browse documentation while editing your configuration
+                </h2>
+              </div>
+              <div class="home-image-container2">
+                <img
+                  alt="pastedImage"
+                  src="https://plugins.jetbrains.com/files/15457/screenshot_b8599e84-97da-4e61-96d6-4c7a801c7c69"
+                  class="home-cards-image2"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="pricing" class="home-pricing">
+          <div class="home-centered-container2">
+            <div class="home-heading1">
+              <span class="home-text46 title">
+                <span class="home-text47">Pricing</span>
+                <span></span>
+              </span>
+            </div>
+            <div class="home-container12">
+              <div class="home-card">
+                <span class="home-text49">Monthly</span>
+                <span class="home-text50">
+                  Get access to the plugin on flexible monthly payment terms.
+                </span>
+                <a href="#providers" class="home-link11">
+                  <div class="home-get-started1 template-button">
+                    <span class="home-text51">
+                      <span>Try for free</span>
+                      <br />
+                    </span>
+                  </div>
+                </a>
+              </div>
+              <div class="home-card1">
+                <span class="home-text54">Yearly</span>
+                <span class="home-text55">
+                  <span>Get access to the plugin and save</span>
+                  <span class="home-text57">20%</span>
+                  <span>with a yearly subscription.</span>
+                  <br />
+                </span>
+                <div class="home-get-started2 template-button">
+                  <span class="home-text60">
+                    <span>Try for free</span>
+                    <br />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-cards1"></div>
+          </div>
+        </section>
+        <footer id="footer" class="home-footer">
+          <div class="home-top">
+            <a
+              href="mailto:gary@pixel-perfect.dev?subject="
+              class="home-link12"
+            >
+              gary@pixel-perfect.dev
+            </a>
+            <div class="home-link13">
+              <div class="home-subscription">
+                <span class="home-text63">
+                  <span class="home-text64">You have a question ?</span>
+                  <br />
+                </span>
+                <a
+                  href="https://tally.so/r/3jebP4"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link14"
+                >
+                  <div class="home-subscribe">
+                    <span class="home-text66">Contact us</span>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>
