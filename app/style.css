@@ -236,7 +236,7 @@
     line-height: 36px;
   }
 }
-@media(max-width: 479px) {
+@media(max-width: 520px) {
   .card {
     margin-right: 0px;
     margin-bottom: 0px;
