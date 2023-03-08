@@ -10,6 +10,8 @@ firebase-debug.*.log*
 # Firebase cache
 .firebase/
 .DS_Store
+app/.DS_Store
+app/.idea/
 
 # Firebase config
 
