@@ -410,6 +410,7 @@
 .c-dashboard-intelli-jid-plugin-right {
   display: flex;
   padding-top: var(--dl-space-space-halfunit);
+  margin-right: 2px;
   padding-left: var(--dl-space-space-twounits);
   border-radius: 64px;
   padding-right: var(--dl-space-space-twounits);
@@ -1158,10 +1159,10 @@
     text-decoration: none;
   }
   .c-dashboard-intelli-jid-plugin-right {
-    padding-top: var(--dl-space-space-unit);
+    padding-top: var(--dl-space-space-halfunit);
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
-    padding-bottom: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-halfunit);
   }
   .c-dashboard-intelli-jid-plugin-text04 {
     color: rgb(255, 255, 255);
