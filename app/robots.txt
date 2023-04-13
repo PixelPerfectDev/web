@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://pixel-perfect.dev/sitemap.txt
+Sitemap: https://pixel-perfect.dev/sitemap.xml
