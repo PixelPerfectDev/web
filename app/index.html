@@ -672,5 +672,21 @@
               gtag('js', new Date());
               gtag('config', 'G-LJWWNX7KPQ');
     </script>
+    <script>
+      var monitor = setInterval(function(){
+        var elem = document.activeElement;
+        if (elem && elem.tagName == 'IFRAME'){
+            var callback = function () {
+              //if (typeof(url) != 'undefined') {
+               // window.location = url;
+              //}
+            };
+            gtag('event', 'conversion', {
+                'send_to': 'AW-11021856395/5dKyCOS22aAYEIvd0Icp',
+                'event_callback': callback
+            });
+        }
+      }, 100);
+    </script>
   </body>
 </html>
